@@ -143,9 +143,12 @@ a {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		row-gap: 5rem;
+		column-gap: 15rem;
 
 		&__content {
 			flex-direction: column;
+
+			&--info {font-size: 2.8rem;}
 		}
 	}
 

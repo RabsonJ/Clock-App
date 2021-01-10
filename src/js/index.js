@@ -10,7 +10,7 @@ const time = document.querySelector('.time');
 const fetchAppData = async () => {
 	try {
 		const [ locationInfo, quoteInfo ] = await axios.all([
-			await axios.get('http://ip-api.com/json'),
+			await axios.get('https://ip-api.com/json'),
 			await axios.get('https://quotes.rest/qod?language=en')
 		]);
 
