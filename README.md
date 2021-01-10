@@ -3,7 +3,7 @@
 A clock app that displays the current time, time zone, location, day of the week, day of the year, week number, as well as a daily motivational quote.
 The live site can be found [here](https://rabsonj.github.io/Clock-App/)
 
-![Device Mockup](imgs/mockup.png)
+![Device Mockup](/imgs/mockup.png)
 
 ## Getting Started
 
