@@ -41,7 +41,7 @@ function checkTime(hoursOfDay) {
 	} else if (hoursOfDay < 18) {
 		timeOfDay = 'afternoon';
 		dayIcon = 'sun';
-		document.body.style.backgroundImage = `${linearGradient}, url('../../imgs/afternoon.jpg')`;
+		document.body.style.backgroundImage = `${linearGradient}, url('imgs/afternoon.jpg')`;
 	} else {
 		timeOfDay = 'evening';
 		dayIcon = 'moon';
@@ -50,7 +50,7 @@ function checkTime(hoursOfDay) {
 		sectionBottom.style.color = 'rgb(222, 227, 231)';
 		detailsTitleColor = 'dark-mode-font-color';
 
-		document.body.style.backgroundImage = `${linearGradient}, url('../../imgs/evening.jpg')`;
+		document.body.style.backgroundImage = `${linearGradient}, url('imgs/evening.jpg')`;
 	}
 }
 
