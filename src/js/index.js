@@ -10,7 +10,7 @@ const time = document.querySelector('.time');
 const fetchAppData = async () => {
 	try {
 		const [ locationInfo, quoteInfo ] = await axios.all([
-			await axios.get('https://ip-api.com/json'),
+			await axios.get('https://ipapi.co/json/'),
 			await axios.get('https://quotes.rest/qod?language=en')
 		]);
 
@@ -78,7 +78,7 @@ function sectionTopHTML(quoteData, locationData) {
             </div>
             `;
 	greeting.innerHTML = `<p class="flex"><i class="icon mr-1 las la-${dayIcon}"></i> Good ${timeOfDay}, It's Currently</p>`;
-	cityAndCountry.innerHTML = `<p class="location">IN ${locationData.city}, ${locationData.country}</p>`;
+	cityAndCountry.innerHTML = `<p class="location">IN ${locationData.city}, ${locationData.country_name}</p>`;
 }
 
 function sectionBottomHTML(locationData) {
